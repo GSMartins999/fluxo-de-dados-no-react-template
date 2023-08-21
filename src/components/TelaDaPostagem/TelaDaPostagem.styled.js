@@ -9,7 +9,7 @@ export const ContainerPostagem = styled.div`
     align-items: center;
 `
 
-export const Title = styled.h2``
+export const Title = styled.h1``
 
 export const Image = styled.img`
     border-radius: 0.5rem;
@@ -20,5 +20,9 @@ export const Image = styled.img`
 export const Description = styled.p`
     max-width: 500px;
     padding-top: 1rem;
+`
+
+export const Autor = styled.h3`
+    
 `
 

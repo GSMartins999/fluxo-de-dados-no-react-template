@@ -1,14 +1,18 @@
 import React from "react";
-import { ContainerPostagem, Title, Image, Description } from "./TelaDaPostagem.styled";
+import { ContainerPostagem, Title, Image, Description, Autor} from "./TelaDaPostagem.styled";
 
-const TelaDaPostagem = () => {
+const TelaDaPostagem = (props) => {
   return (
     <ContainerPostagem>
-      <Title>Titulo</Title>
-      <Image src={"https://picsum.photos/536/354"} />
-      <Description>Descrição</Description>
+      <Title>{props.titulo}</Title>
+      <Image src={props.imagem} />
+      <Description>{props.descricao}</Description>
+      <Autor>{props.autor}</Autor>
     </ContainerPostagem>
   );
 };
 
 export default TelaDaPostagem;
+
+
+// "https://picsum.photos/536/354"
